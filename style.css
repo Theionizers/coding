@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    cursor: url('heart.gif'), auto;
+    flex-direction: column;
+    background-image: url('paper-art-with-heart-on-pink-background-love-concept-design-for-happy-mother-s-day-valentine-s-day-birthday-day-banner-and-greeting-template-design-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerbox {
+    display: flex;
+    align-items: center;
+}
+
+#hedertext {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff4d6d, #ff758f, #d63384);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.main-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+.foram {
+    display: flex;
+    justify-content: center;
+}
+
+.imgi {
+    display: flex;
+    align-items: center;
+}
+
+.side-gif {
+    width: 100%;
+    max-width: 350px;
+}
+
+form {
+    border: 2px solid #e75480;
+    border-radius: 16px;
+    padding: 24px 32px;
+    background: #fff8fa;
+    box-shadow: 0 2px 12px rgba(231,84,128,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-title {
+    font-size: 1.5em;
+    color: #e75480;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.form-row label {
+    min-width: 140px;
+    margin-right: 12px;
+    text-align: right;
+    font-size: 1em;
+}
+
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background: #e75480;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #c7436a;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+    .main-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header {
+        height: auto;
+        padding: 20px;
+    }
+
+    #hedertext {
+        font-size: 2.2rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        text-align: left;
+        margin-bottom: 6px;
+        min-width: auto;
+    }
+
+    .side-gif {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hedertext {
+        font-size: 1.8rem;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    .form-row input,
+    .form-row select {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .side-gif {
+        max-width: 200px;
+    }
+}
